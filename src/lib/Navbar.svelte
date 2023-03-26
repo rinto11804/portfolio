@@ -24,7 +24,6 @@
     padding: 1rem;
     background-color: #2e2e2eab;
     gap: 5rem;
-    font-size: 0.9rem;
     width: 100%;
     z-index: 5;
     backdrop-filter: blur(20px);
@@ -54,8 +53,12 @@
   }
 
   @media (max-width: 745px) {
+    span img {
+      width: 1.2rem;
+    }
     .links {
-      font-size: 0.9rem;
+      font-size: 0.8rem;
+      gap: 3rem;
     }
   }
 </style>
