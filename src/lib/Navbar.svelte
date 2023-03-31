@@ -10,7 +10,9 @@
     <a href="#works">Works</a>
     <span>
       <img src={GithubLogo} alt="github logo" />
-      <a href="#source"> Source </a>
+      <a href="https://github.com/rinto11804/portfolio" target="_blank">
+        Source
+      </a>
     </span>
   </div>
 </nav>
@@ -26,7 +28,7 @@
     gap: 5rem;
     width: 100%;
     z-index: 5;
-    backdrop-filter: blur(20px);
+    backdrop-filter: blur(10px);
   }
   img {
     width: 2rem;

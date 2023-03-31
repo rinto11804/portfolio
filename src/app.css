@@ -1,8 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Saira:wght@300;500&display=swap');
 :root {
-  color-scheme: light dark;
-  font-family: 'M PLUS Rounded 1c', sans-serif;
-  color: #ffffffeb;
+  font-family: 'Julius Sans One', sans-serif;
+  color: #dbdbdbeb;
   background-color: #202023;
 
   font-synthesis: none;
@@ -24,8 +23,7 @@ a {
   text-decoration:none;
 }
 a:hover {
-  text-decoration: #e0226b wavy underline;
-  text-decoration-thickness:0.15rem;
+  color: #faedc0;
 }
 
 #app{
@@ -51,17 +49,4 @@ button:hover {
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
 }
