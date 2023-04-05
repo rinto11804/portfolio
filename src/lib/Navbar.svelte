@@ -28,7 +28,7 @@
     gap: 5rem;
     width: 100%;
     z-index: 5;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(20px);
   }
   img {
     width: 2rem;

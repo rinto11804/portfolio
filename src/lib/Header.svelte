@@ -27,8 +27,8 @@
         </a>
     </div>
     <img src={Profile} alt="profile" />
-    <h2>Hello, I'm rinto</h2>
-    <code>Hello!,I'm a self taught programmer</code>
+    <h2>Hello👋,I'm rinto</h2>
+    <code>I'm a self taught programmer</code>
 </div>
 
 <style>
@@ -49,13 +49,13 @@
     }
     .profile h2 {
         letter-spacing: 0.1rem;
-        font-size: 2rem;
+        font-size: 1.7rem;
     }
     .social-links {
         display: flex;
         width: 100%;
         justify-content: flex-end;
-        gap: 1rem;
+        gap: 1.5rem;
     }
     .social-links img {
         width: 1rem;
@@ -63,7 +63,7 @@
         cursor: pointer;
     }
     .profile > img {
-        width: 7rem;
+        width: 8rem;
         border-radius: 50%;
         border: 2px solid whitesmoke;
         filter: grayscale(10);
@@ -83,11 +83,8 @@
     }
 
     @media (max-width: 745px) {
-        .profile > img {
-            width: 6rem;
-        }
         .profile {
-            top: 5rem;
+            top: 10rem;
             width: 25rem;
         }
         .profile h2 {
