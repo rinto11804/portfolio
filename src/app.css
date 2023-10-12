@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Saira:wght@300;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap');
 :root {
-  font-family: 'Julius Sans One', sans-serif;
-  color: #dbdbdbeb;
-  background-color: #202023;
+  font-family: 'Inter', sans-serif;
+  color: #a7a7a7;
+  background-color: #262626;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -11,42 +11,15 @@
   -webkit-text-size-adjust: 100%;
 }
 *{
+  font-family: 'Inter', sans-serif;
   margin:0;
   padding:0;
   box-sizing:border-box;
 }
 
-a {
-  font-weight: 600;
-  color: #e1e1ee;
-  letter-spacing:0.2rem;
-  text-decoration:none;
-}
-a:hover {
-  color: #faedc0;
-}
 
-#app{
-  display:flex;
-  flex-direction:column;
-  align-items:center;
-}
-
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+a{
+  text-decoration: none;
+  color: inherit;
+  font-weight: bolder;
 }

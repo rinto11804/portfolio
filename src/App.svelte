@@ -10,10 +10,13 @@
 
 <style>
   main {
-    display: flex;
     width: 100%;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    padding-inline: 20rem;
+  }
+
+  @media (max-width: 745px) {
+    main {
+      padding-inline: 3rem;
+    }
   }
 </style>
