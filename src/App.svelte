@@ -1,17 +1,26 @@
 <script>
   import Navbar from "./lib/Navbar.svelte";
   import Header from "./lib/Header.svelte";
+  import Projects from "./lib/Projects.svelte";
+  import { Router, Route } from "svelte-routing";
+    import Contact from "./lib/Contact.svelte";
+  export let url = "";
 </script>
 
-<Navbar />
-<main>
-  <Header />
-</main>
+<Router {url}>
+  <header>
+    <Navbar />
+  </header>
+  <main>
+    <Route path="/"><Header /></Route>
+    <Route path="/projects" component={Projects} />
+  </main>
+  <Contact/>
+</Router>
 
 <style>
   main {
-    width: 100%;
-    padding-inline: 20rem;
+    margin-inline: 10rem;
   }
 
   @media (max-width: 745px) {

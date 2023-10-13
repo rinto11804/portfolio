@@ -9,27 +9,26 @@
 <section class="profile">
     <img src={Profile} alt="profile" />
     <div class="profile-header">
-        <h2>Rinto Joseph T R</h2>
+        <h2>Rinto Joseph TR</h2>
         <p>(Big fan of open source)</p>
 
         <div class="profile-description">
             <p>
-                "Loves <span class="highlight">Open Source</span> dev and
-                contribution. Always try to adapt with new things in
-                <span class="highlight">Web Development</span>
-                and try new things to web dev world. Mostly into systems programming
-                language such as
-                <span class="highlight">Rust 🦀</span>
-                programming language , <span class="highlight">Go</span>
-                programming language etc.And a
-                <span class="highlight">Neo(Vim)</span> user"
+                "Loves <span class="highlight">Open-Source </span> development
+                and actively adapt to the latest trends in
+                <span class="highlight">Web development</span> and related
+                fields, constantly exploring new aspects of the web dev world.
+                Primarily focused on systems programming languages such as
+                <span class="highlight">Rust</span>
+                🦀 and <span class="highlight">Go</span> , and a dedicated user
+                of <span class="highlight">NeoVim</span>."
             </p>
         </div>
     </div>
     <div class="social-links">
         <a href="https://github.com/rinto11804" target="_blank">
             <img src={GithubLogo} alt="github/rinto11804" />
-            Github
+            <span>Github↗</span>
         </a>
         <a
             href="https://www.linkedin.com/in/rinto-joseph-t-r-a0921225a/"
@@ -37,7 +36,7 @@
             rel="linkedin/rintojosephtr"
         >
             <img src={LinkedinLogo} alt="linkedin" />
-            <span>Linkedin</span>
+            <span>Linkedin↗</span>
         </a>
 
         <a
@@ -46,7 +45,8 @@
             rel="instagram/rinto_josephtr"
         >
             <img src={InstagramLogo} alt="instagram" />
-            <span>Instagram</span>
+
+            <span>Instagram↗</span>
         </a>
 
         <a
@@ -55,24 +55,24 @@
             rel="twitter/rinto_josephtr"
         >
             <img src={TwitterLogo} alt="twitter" />
-            <span>Twitter</span>
+            <span>Twitter↗</span>
         </a>
     </div>
 </section>
 
 <style>
     .profile {
-        position: absolute;
-        top: 10rem;
-        height: 20rem;
-        min-width: 25rem;
+        width: 100%;
         display: flex;
+        align-items: flex-start;
+        justify-content: center;
         flex-direction: column;
         gap: 1.4rem;
-        z-index: 2;
     }
     .profile h2 {
         font-size: 2.5rem;
+        text-transform: uppercase;
+        letter-spacing: 1px;
         color: whitesmoke;
     }
 
@@ -81,12 +81,17 @@
         font-weight: bolder;
     }
     .social-links {
-        font-size: 1.5rem;
         display: flex;
         width: 100%;
         align-items: center;
         justify-content: flex-start;
         gap: 1.5rem;
+        font-size: 1.4rem;
+        font-weight: 100;
+    }
+
+    .social-links span {
+        font-size: 1.4rem;
     }
 
     .social-links a {
@@ -98,23 +103,25 @@
     .social-links a:hover {
         text-decoration: underline;
     }
-    
+
     .social-links img {
         width: 1rem;
         filter: contrast(0.01);
         cursor: pointer;
     }
     .profile > img {
-        width: 10rem;
+        width: 8rem;
+        margin-left: 0.5rem;
         border-radius: 50%;
         border: 2px solid rgb(255, 255, 255);
     }
     /* background-color: #bdafaf; */
 
     .profile-header {
+        width: 100%;
         display: flex;
         flex-direction: column;
-        gap: 0.5rem;
+        gap: 1.2rem;
     }
     .highlight {
         font-size: 1.8rem;
@@ -131,7 +138,7 @@
     .profile-description {
         width: 50%;
         font-size: 1.5rem;
-        line-height: 2rem;
+        line-height: 2.3rem;
     }
 
     @media (max-width: 745px) {

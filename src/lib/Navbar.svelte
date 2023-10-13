@@ -1,14 +1,14 @@
 <script>
   import Logo from "/logo.svg";
   import GithubLogo from "../assets/github.svg";
+  import {  Link } from "svelte-routing";
 </script>
 
 <nav>
   <img src={Logo} alt="logo" />
   <div class="links">
-    <a href="#home">Home</a>
-    <a href="#works">Works</a>
-    <a href="#about">About</a>
+    <Link to="/">Home</Link>
+    <Link to="/projects">Projects</Link>
   </div>
 
   <span>
@@ -21,7 +21,7 @@
 
 <style>
   nav {
-    position: fixed;
+    position: sticky;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -30,6 +30,7 @@
     width: 100%;
     z-index: 5;
     backdrop-filter: blur(20px);
+    border-bottom: 2px solid #51515123;
   }
   img {
     width: 2rem;
@@ -45,23 +46,29 @@
     display: flex;
     align-items: center;
     gap: 0.5rem;
+    border-radius: 10rem;
+    padding: 0.8rem;
+  }
+
+  span:hover{
+    background-color: #313131;
   }
 
   .links {
     display: flex;
     align-items: flex-end;
     justify-content: space-evenly;
-    gap: clamp(0.1rem, 5rem, 10rem);
+    gap: clamp(0.1rem, 2rem, 10rem);
     background-color: #313131;
     border-radius: 10rem;
     padding: 5px;
     list-style: none;
   }
-  .links a{
+  :global(.links a){
       padding: 0.8rem;
   }
 
-  .links a:hover {
+  :global(.links a:hover) {
     text-decoration: underline;
     background-color: #414141;
     font-weight: bolder;

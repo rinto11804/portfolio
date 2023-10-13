@@ -1,5 +1,10 @@
 lockfileVersion: '6.0'
 
+dependencies:
+  svelte-routing:
+    specifier: ^2.5.0
+    version: 2.5.0
+
 devDependencies:
   '@sveltejs/vite-plugin-svelte':
     specifier: ^2.0.3
@@ -380,6 +385,10 @@ packages:
     dependencies:
       svelte: 3.57.0
     dev: true
+
+  /svelte-routing@2.5.0:
+    resolution: {integrity: sha512-fM8yb6qRaaOZiOtNkh8lLt4myEINjVWUzQOmLYelrIuAAVW1q4y4IYHOA78D+iDE/Abl3aiFDHn/kS/kZNvRWA==}
+    dev: false
 
   /svelte@3.57.0:
     resolution: {integrity: sha512-WMXEvF+RtAaclw0t3bPDTUe19pplMlfyKDsixbHQYgCWi9+O9VN0kXU1OppzrB9gPAvz4NALuoca2LfW2bOjTQ==}
