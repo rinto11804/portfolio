@@ -20,6 +20,7 @@
 
 <style>
   main {
+    margin-top: 3.5rem;
     margin-inline: 10rem;
   }
 
