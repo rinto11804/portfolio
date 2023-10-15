@@ -16,9 +16,9 @@
         flex-direction: column;
         justify-content: space-around;
         border-top: 1px solid #565656;
-        gap: 1rem;
-        margin-top: 1rem;
-        padding: 1rem;
+        gap: 0.6rem;
+        margin-top: 4rem;
+        padding-top: 1rem;
     }
 
     span{

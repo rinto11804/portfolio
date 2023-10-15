@@ -20,6 +20,7 @@
 
 <style>
   main {
+    display: flex;
     margin-top: 5rem;
     margin-inline: 10rem;
   }

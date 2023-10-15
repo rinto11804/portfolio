@@ -4,10 +4,32 @@
     import LinkedinLogo from "../assets/linkedin.svg";
     import InstagramLogo from "../assets/instagam.svg";
     import TwitterLogo from "../assets/twitter.svg";
+    import { link } from "svelte-routing";
+    const social_links = [{
+        name:"Github",
+        href:"https://github.com/rinto11804",
+        logo_src:GithubLogo,
+    },
+    {
+        name:"Linkedin",
+        href:"www.linkedin.com/in/rintojosephtr",
+        logo_src:LinkedinLogo,
+    },
+    {
+        name:"Instagram",
+        href:"https://www.instagram.com/rinto_josephtr/",
+        logo_src:InstagramLogo,
+    },
+    {
+        name:"Twitter",
+        href:"https://twitter.com/rinto_joseph_tr/",
+        logo_src:TwitterLogo
+    }
+    ]
 </script>
 
 <section class="profile">
-    <img src={Profile} alt="profile" />
+    <img src={Profile} alt="profile" width="140px" height="140px"/>
     <div class="profile-header">
         <h2>Rinto Joseph TR</h2>
         <p>(Big fan of open source)</p>
@@ -26,41 +48,24 @@
         </div>
     </div>
     <div class="social-links">
-        <a href="https://github.com/rinto11804" target="_blank">
-            <img src={GithubLogo} alt="github/rinto11804" />
-            <span>Github↗</span>
-        </a>
-        <a
-            href="https://www.linkedin.com/in/rinto-joseph-t-r-a0921225a/"
-            target="_blank"
-            rel="linkedin/rintojosephtr"
-        >
-            <img src={LinkedinLogo} alt="linkedin" />
-            <span>Linkedin↗</span>
-        </a>
-
-        <a
-            href="https://www.instagram.com/rinto_josephtr/"
-            target="_blank"
-            rel="instagram/rinto_josephtr"
-        >
-            <img src={InstagramLogo} alt="instagram" />
-
-            <span>Instagram↗</span>
-        </a>
-
-        <a
-            href="https://twitter.com/rinto_joseph_tr/"
-            target="_blank"
-            rel="twitter/rinto_josephtr"
-        >
-            <img src={TwitterLogo} alt="twitter" />
-            <span>Twitter↗</span>
-        </a>
+        {#each social_links as link}
+            <a href={link.href} target="_blank" >
+                <img src={link.logo_src} alt={link.name} width="20px" height="20px"/>
+                <span>{link.name}↗</span>
+            </a>
+        {/each}
     </div>
 </section>
 
+<section class="hero-img">
+    <spline-viewer url="https://prod.spline.design/PBQQBw8bfXDhBo7w/scene.splinecode" events-target="local"></spline-viewer>
+</section>
+
 <style>
+    .hero-img {
+        width: 50%;
+        height: 50vh;
+    }
     .profile {
         width: 100%;
         display: flex;
@@ -110,7 +115,7 @@
         cursor: pointer;
     }
     .profile > img {
-        width: 8rem;
+        aspect-ratio: auto 1;
         margin-left: 0.5rem;
         border-radius: 50%;
         border: 2px solid rgb(255, 255, 255);
@@ -136,7 +141,7 @@
     }
 
     .profile-description {
-        width: 50%;
+        width: 90%;
         font-size: 1.5rem;
         line-height: 2.3rem;
     }

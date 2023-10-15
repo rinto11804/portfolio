@@ -47,7 +47,7 @@
             <p>
                 A command line tool using Go that allow one to download a books from libgen website
             </p>
-            <a href="https://github.com/rinto11804" target="_blank">
+            <a href="https://github.com/rinto11804/libgen-cli" target="_blank">
                 <img src={GithubLogo} alt="github/rinto11804" />
                 <span>View Source↗</span>
             </a>
@@ -73,7 +73,7 @@
         flex-direction: row;
         align-items: start;
         gap: 4rem;
-        justify-content: space-between;
+        justify-content: space-evenly;
         margin-block: 2rem;
         flex-wrap: wrap;
     }
