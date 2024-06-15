@@ -4,7 +4,14 @@
     import LinkedinLogo from "../assets/linkedin.svg";
     import InstagramLogo from "../assets/instagam.svg";
     import TwitterLogo from "../assets/twitter.svg";
-    import { link } from "svelte-routing";
+
+    import { Application } from '@splinetool/runtime';
+
+    let canvas;
+    // const app = new Application(canvas);
+    // app.load('https://prod.spline.design/ORTIFV2Eg-d00-49/scene.splinecode');
+
+
     const social_links = [{
         name:"Github",
         href:"https://github.com/rinto11804",
@@ -58,7 +65,7 @@
 </section>
 
 <section class="hero-img">
-    <spline-viewer url="https://prod.spline.design/PBQQBw8bfXDhBo7w/scene.splinecode" events-target="local"></spline-viewer>
+    <canvas bind:this={canvas}></canvas>
 </section>
 
 <style>
